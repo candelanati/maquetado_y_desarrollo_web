@@ -14,7 +14,7 @@
     
 }
 nav{
-    z-index: 2;
+    z-index: 10;
     display: flex;
     justify-content: center;
     #contenedor-nav{
@@ -142,6 +142,7 @@ body{
     }
 }
 .section-sobre-nosotros{
+    
     margin-inline: 100px;
     display: flex;
     align-items: center;
@@ -170,6 +171,7 @@ body{
     }
 }
 .section-servicios-pastillas{
+    
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -183,6 +185,7 @@ body{
         gap: 10px;
     }
     article{
+        z-index: -1;
         height: 230px;
         width: 200px;
         padding: 10px;
@@ -237,5 +240,59 @@ body{
         align-items: center;
         justify-content: end;
         position: relative;
+    }
+}
+.section-opiniones{
+    
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin-bottom: 20px;
+    }
+    .section-opiniones-div{
+        display: flex;
+        justify-content: center;
+        margin-inline: 50px;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .section-opiniones-cards{
+        z-index: -1;
+        /* border: 1px solid; */
+        background-color: var(--text-soft);
+        
+        backdrop-filter: blur(100px);
+        /* box-shadow: 3px 3px 5px#2b2b2b44 ; */
+        width: 350px;
+        border-radius: 8px;
+        padding: 10px;
+        .dedicacion-opiniones{
+            font-size: x-small;
+            opacity: 80%;
+        }
+        .opinion{
+            font-size: small;
+            color: #080808;
+        }
+        .div-opinion{
+            display: flex;
+            gap: 10px;
+        }
+        .div-info-datos{
+            display: block;
+            strong{
+                color: #080808;
+            }
+            .dedicacion-opiniones{
+                color: #080808;
+            }
+        }
+    }
+    .img-section-opiniones{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
     }
 }
