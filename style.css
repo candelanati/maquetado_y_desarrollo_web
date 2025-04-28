@@ -4,6 +4,7 @@
     --bg:#080808;
     --text:#d9d9d9;
     --text-soft:#8f8f8f;
+    --contenedores:#0707076b;
 }
 *{
     /*fuente*/
@@ -21,7 +22,7 @@ nav{
         border: 1px transparent;
         border-radius: 8px;
         position:fixed;
-        background-color: #0707076b;
+        background-color: var(--contenedores);
         height: 1.5rem;
         width: 80dvw;
         opacity: 90%;
@@ -54,19 +55,70 @@ nav{
     }
 
 }
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    .contenedor-footer{
+        z-index: 1;
+        height: 10rem;
+        width: 95dvw;
+        background-image: linear-gradient(to top right, #1a1a1a,#555555);
+        border: 1px transparent;
+        border-radius: 8px;
+        opacity: 90%;
+        backdrop-filter: blur(100px);
+        display: flex;
+        align-items: center;
+        padding: 5px; 
+        justify-content: space-around;
+    }
+    .footer-datos{
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+    .footer-redes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .redes{
+            gap: 5px;
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+            display: flex;
+            align-items: center;
+            font-size: small;
+        }
+    }
+    /* .wave{
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        border: 1px transparent;
+        border-radius: 8px;
+        height: 10rem;
+        padding: 5px;
+        width: 95dvw;
+        background-image: url(./public/wave.svg);
+        background-size: cover;
+    }  */
+}
 body{
     background-color: var(--bg);
 }
-/* main{
-    margin-inline: 100px;
-} */
 .titulos-secciones{
     font-size: xx-large;
     font-weight: 700;
 }
 #banner{
     background-image: url(./public/img/img-banner2.jpg);
-    background-size: cover;
+    background-size:cover;
     height: 100dvh;
     width: 99.2dvw;
     display: flex;
@@ -109,7 +161,6 @@ body{
         flex-direction: column;
         gap: 10px;
     }
-    
     #frase-destacada{
         margin-top: 20px;
         font-style: italic;
