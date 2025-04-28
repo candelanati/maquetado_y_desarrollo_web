@@ -57,9 +57,9 @@ nav{
 body{
     background-color: var(--bg);
 }
-main{
+/* main{
     margin-inline: 100px;
-}
+} */
 .titulos-secciones{
     font-size: xx-large;
     font-weight: 700;
@@ -90,6 +90,7 @@ main{
     }
 }
 .section-sobre-nosotros{
+    margin-inline: 100px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -98,9 +99,9 @@ main{
         justify-content: start;
         #animacion-sobre-nosotros{
             /* border: 1px solid white;  */
-            width: 600px;
+            width: 40dvw;
             height: 500px;
-            
+            z-index: -1;
         }
     }
     .contenedor-info-sobre-nosotros{
@@ -115,5 +116,75 @@ main{
     }
     #titulo-sobre-nosotros{
         margin-bottom: 50px;
+    }
+}
+.section-servicios-pastillas{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 20px;
+    .div-servicios-pastillas{
+        margin-top: 1rem;
+        margin-inline: 0px;
+        display: flex;
+        gap: 10px;
+    }
+    article{
+        height: 230px;
+        width: 200px;
+        padding: 10px;
+        p{
+            top: 0%;
+            color: var(--text);
+            font-size: small;
+            font-weight: 200;
+            z-index: 2;
+            transition: all 0.5s;
+            opacity: 50%;
+        }
+        
+        h4{
+            color: var(--text);
+            z-index: 2;
+        }
+    }
+    article:hover{
+        p{
+            opacity: 100%;
+           transform: translateY(3px);
+        }
+    }
+    .imagenes-servicios{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        opacity: 40%;
+        transition: all 0.5s;
+    }
+    .imagenes-servicios:hover{
+        transform: scale(1.05);
+        
+    }
+    .div-servicios-pastillas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .div-foto-servicios{
+        height: 150px;
+        width: 200px;
+        overflow: hidden;
+        /* border: 1px solid var(--text); */
+        padding: 10px;
+        background-color: var(--bg);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        position: relative;
     }
 }
