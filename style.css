@@ -9,6 +9,8 @@
     /*fuente*/
     font-family: "Outfit", sans-serif;
     margin: 0px;
+    color: var(--text);
+    
 }
 nav{
     z-index: 2;
@@ -55,7 +57,13 @@ nav{
 body{
     background-color: var(--bg);
 }
-
+main{
+    margin-inline: 100px;
+}
+.titulos-secciones{
+    font-size: xx-large;
+    font-weight: 700;
+}
 #banner{
     background-image: url(./public/img/img-banner2.jpg);
     background-size: cover;
@@ -81,13 +89,31 @@ body{
         /* border: solid 1px white; */
     }
 }
-
-.contenedor-animacion-sobre-nosotros{
+.section-sobre-nosotros{
     display: flex;
-    justify-content: start;
-    #animacion-sobre-nosotros{
-        /* border: 1px solid white;  */
-        width: 600px;
-        height: 500px;
+    align-items: center;
+    gap: 15px;
+    .contenedor-animacion-sobre-nosotros{
+        display: flex;
+        justify-content: start;
+        #animacion-sobre-nosotros{
+            /* border: 1px solid white;  */
+            width: 600px;
+            height: 500px;
+            
+        }
+    }
+    .contenedor-info-sobre-nosotros{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #frase-destacada{
+        margin-top: 20px;
+        font-style: italic;
+    }
+    #titulo-sobre-nosotros{
+        margin-bottom: 50px;
     }
 }
