@@ -40,7 +40,7 @@ nav{
     a{
         text-decoration: none;
         color:var(--text);
-        font-size: small;
+        font-size: medium;
     }
     ul{
         width: 70dvw;
@@ -71,7 +71,7 @@ footer{
     
     .contenedor-footer{
         z-index: 1;
-        height: 15rem;
+        height: 18rem;
         width: 95dvw;
         background-image: linear-gradient(to top right, #1a1a1a,#555555);
         border: 1px transparent;
@@ -123,7 +123,7 @@ body{
     background-color: var(--bg);
 }
 .titulos-secciones{
-    font-size: xx-large;
+    font-size: xxx-large;
     font-weight: 700;
 }
 #banner{
@@ -146,7 +146,7 @@ body{
     }
     p{
         color: var(--text);
-        font-size: small;
+        font-size: medium;
     }
     
 }
@@ -163,7 +163,7 @@ body{
             /* border: 1px solid white;  */
             margin-top: 20px;
             width: 90dvw;
-            height: 400px;
+            height: 300px;
             z-index: -1;
         }
     }
@@ -174,6 +174,7 @@ body{
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        
     }
     #frase-destacada{
         margin-top: 20px;
@@ -301,11 +302,15 @@ body{
       .section-opiniones-cards {
         flex: 0 0 auto;
         width: 80dvw; /* cada tarjeta ocupa el 80% del ancho */
+        max-width: 400px;
         scroll-snap-align: center;
         background: var(--text-soft);
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       
       .img-section-opiniones {
@@ -346,6 +351,9 @@ body{
 /*tablets*/
 @media screen and (min-width:700px){
     #banner{
+        h1{
+            font-size: 4rem;
+        }
         background-image: linear-gradient(90deg, #000000,#08080850), url(./public/img/img-banner2.jpg);
         #div-banner{
             margin-left: 20rem;
@@ -378,13 +386,21 @@ body{
             #animacion-sobre-nosotros{
                 /* border: 1px solid white;  */
                 width: 40dvw;
-                height: 400px;
+                height: 700px;
                 z-index: -1;
+            }
+        }
+        .contenedor-info-sobre-nosotros{
+            p{
+                font-size: larger;
             }
         }
     }
     .section-servicios-pastillas{
-    
+        h3{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
@@ -395,26 +411,28 @@ body{
             margin-top: 1rem;
             margin-inline: 0px;
             display: flex;
-            gap: 10px;
+            gap: 20px;
         }
         article{
             z-index: -1;
-            height: 230px;
-            width: 200px;
-            padding: 10px;
+            height: 300px;
+            width: 320px;
+            padding: 0px;
             p{
                 top: 0%;
                 color: var(--text);
-                font-size: small;
+                font-size: medium;
                 font-weight: 200;
                 z-index: 2;
                 transition: all 0.5s;
                 opacity: 50%;
+                margin-top: 10px;
             }
             
             h4{
                 color: var(--text);
                 z-index: 2;
+                font-size: larger;
             }
         }
         article:hover{
@@ -443,10 +461,9 @@ body{
         }
         .div-foto-servicios{
             height: 150px;
-            width: 200px;
+            width: 300px;
             overflow: hidden;
             /* border: 1px solid var(--text); */
-            padding: 10px;
             background-color: var(--bg);
             border-radius: 10px;
             display: flex;
@@ -480,7 +497,7 @@ body{
             
             backdrop-filter: blur(100px);
             /* box-shadow: 3px 3px 5px#2b2b2b44 ; */
-            width: 200px;
+            width: 300px;
             border-radius: 8px;
             padding: 10px;
             .dedicacion-opiniones{
