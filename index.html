@@ -6,21 +6,38 @@
     <title>Pixel Studio</title>
     <link rel="shortcut icon" href="./public/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.87/build/spline-viewer.js" async></script>
 </head>
 <body>
     <header>
         <nav>
-            <h1 id="logo-nav"></h1>
-            <ul>
-                <li><a href="">inicio</a></li>
-                <li><a href="">sobre nosotros</a></li>
-                <li><a href="">opiniones</a></li>
-                <li><a href="">contacto</a></li>
-            </ul>
+            <div id="contenedor-nav">
+                <h1 id="logo-nav"></h1>
+                <ul>
+                    <li><a href="">inicio</a></li>
+                    <li><a href="">sobre nosotros</a></li>
+                    <li><a href="">opiniones</a></li>
+                    <li><a href="">contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        
+        <!-- banner -->
+        <section id="banner">
+            <div id="div-banner">
+                <h1>Pixel Studio</h1>
+                <h2>Estudio de diseño multimedial.</h2>
+                <p>Convertimos ideas en experiencias visuales.</p>
+            </div>
+        </section>
+        <!-- sobre nosotros -->
+        <section>
+
+            <div class="contenedor-animacion-sobre-nosotros">
+                <spline-viewer id="animacion-sobre-nosotros" loading-anim-type="spinner-small-dark" url="https://prod.spline.design/K-nZQvDaHDvyKbGn/scene.splinecode"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANCAYAAADISGwcAAAG1ElEQVR4AQCBAH7/AHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyBndCshB3QrIZd0KyHndCsiB3QrIdd0KyF3dCsg13QrIBd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyBHdCsgt3QrIPAIEAfv8Ad0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgJ3QrINd0KyGHdCsiF3QrInd0KyKXdCsiZ3QrIfd0KyFHdCsgh3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIBd0KyCHdCsgwAgQB+/wB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIEd0KyEHdCshx3QrIpd0KyM3dCsjl3QrI7d0KyOHdCsjB3QrIld0KyF3dCsgh3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIFd0KyCACBAH7/AHdCsgR3QrICd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIBd0KyCndCshZ3QrIkd0KyMndCskB3QrJLd0KyUndCslR3QrJRd0KySXdCsj13QrIud0KyHXdCsg13QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgZ3QrIIAIEAfv8Ad0KyC3dCsgl3QrIHd0KyBXdCsgR3QrIFd0KyCXdCshF3QrIbd0KyKXdCsjl3QrJJd0KyWHdCsmR3QrJsd0Kyb3dCsmx3QrJkd0KyVndCskZ3QrI0d0KyIndCshJ3QrIGd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIGd0KyCndCsgwAgQB+/wB3QrIPd0KyDndCsgx3QrILd0KyC3dCsg13QrISd0KyG3dCsid3QrI2d0KyR3dCslh3QrJpd0KydndCsn53QrKCd0Kyf3dCsnZ3QrJpd0KyWHdCskV3QrIyd0KyIXdCshJ3QrIId0KyA3dCsgF3QrIDd0KyBndCsgt3QrIOd0KyEQCBAH7/AHdCsgx3QrILd0KyCXdCsgh3QrIId0KyC3dCshB3QrIZd0KyJndCsjZ3QrJHd0KyWXdCsmp3QrJ4d0KygXdCsoV3QrKCd0KyendCsmx3QrJbd0KySHdCsjV3QrIkd0KyFXdCsgt3QrIEd0KyAndCsgR3QrIHd0KyC3dCsg53QrIQAIEAfv8Ad0KyA3dCsgJ3QrIAd0KyAHdCsgB3QrIAd0KyBHdCsg13QrIZd0KyKHdCsjl3QrJLd0KyW3dCsml3QrJyd0KydndCsnR3QrJsd0KyX3dCsk93QrI9d0KyKndCshp3QrIMd0KyAndCsgB3QrIAd0KyAHdCsgB3QrIFd0KyCHdCsgsAgQB+/wB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgV3QrITd0KyI3dCsjN3QrJDd0KyUHdCsll3QrJdd0KyW3dCslR3QrJId0KyOXdCsih3QrIXd0KyCHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIBd0KyAwCBAH7/AHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIOd0KyHHdCsip3QrI2d0KyP3dCskJ3QrJBd0KyOndCsjB3QrIid0KyE3dCsgR3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIBAIEAfv8Ad0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgF3QrINd0KyGndCsiV3QrIsd0KyL3dCsi53QrIod0KyHndCshJ3QrIFd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyA3dCsgYAgQB+/wB3QrIGd0KyA3dCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgh3QrITd0KyHHdCsiN3QrImd0KyJXdCsh93QrIWd0KyC3dCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgZ3QrINd0KyEAGBAH7/AHdCsg93QrIMd0KyBndCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyB3dCshF3QrIad0KyIHdCsiN3QrIid0KyHHdCshR3QrIJd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIAd0KyAHdCsgB3QrIEd0KyDXdCshR3QrIY2gJyZgLw1UEAAAAASUVORK5CYII=" alt="Spline preview" style="width: 100%; height: 100%;"/></spline-viewer>
+            </div>
+        </section>
     </main>
 </body>
 </html>
