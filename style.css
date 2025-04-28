@@ -505,7 +505,7 @@ body{
                 opacity: 80%;
             }
             .opinion{
-                font-size: small;
+                font-size: medium;
                 color: #080808;
             }
             .div-opinion{
@@ -516,17 +516,21 @@ body{
                 display: block;
                 strong{
                     color: #080808;
+
                 }
                 .dedicacion-opiniones{
                     color: #080808;
+                    font-size: smaller;
                 }
             }
+            
         }
         .img-section-opiniones{
             width: 40px;
             height: 40px;
             border-radius: 100%;
         }
+       
     }
     
     footer{
